@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon JDR - [Nom de ton jeu]</title>
+    <!-- Leaflet CSS (pour la carte) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Ton CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <ul class="nav-tabs">
+                <li><a href="#" class="active" data-tab="accueil">Accueil</a></li>
+                <li><a href="#" data-tab="personnages">Personnages</a></li>
+                <li><a href="#" data-tab="regles">Règles</a></li>
+                <li><a href="#" data-tab="carte">Carte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu des onglets -->
+    <main>
+        <!-- Onglet Accueil -->
+        <section id="accueil" class="tab-content active">
+            <h1>Bienvenue dans [Nom de ton JDR]</h1>
+            <p>Description générale de ton univers, ambiance, etc.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Bannière du JDR" class="banner">
+        </section>
+
+        <!-- Onglet Personnages -->
+        <section id="personnages" class="tab-content">
+            <h2>Personnages Principaux</h2>
+            <div class="cards-container">
+                <!-- Carte de personnage 1 -->
+                <div class="card">
+                    <h3>Nom du Personnage</h3>
+                    <img src="https://via.placeholder.com/200x300" alt="Portrait">
+                    <p><strong>Rôle :</strong> Guerrier / Mage / etc.</p>
+                    <p><strong>Description :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel neque nec lacus vehicula fermentum.</p>
+                    <p><strong>Compétences :</strong> Force, Magie, Agilité</p>
+                </div>
+                <!-- Carte de personnage 2 -->
+                <div class="card">
+                    <h3>Autre Personnage</h3>
+                    <img src="https://via.placeholder.com/200x300" alt="Portrait">
+                    <p><strong>Rôle :</strong> Voleur</p>
+                    <p><strong>Description :</strong> Un voleur rusé qui a volé le roi...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Onglet Règles -->
+        <section id="regles" class="tab-content">
+            <h2>Règles du JDR</h2>
+            <div class="rules-section">
+                <article>
+                    <h3>📜 Système de Jeu</h3>
+                    <p>Explication du système (D20, D100, etc.).</p>
+                    <ul>
+                        <li><strong>Attributs :</strong> Force, Dexterité, Intelligence, etc.</li>
+                        <li><strong>Jet de dés :</strong> 1D20 + modificateur</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>⚔️ Combat</h3>
+                    <p>Règles de combat, initiative, dégâts, etc.</p>
+                </article>
+                <article>
+                    <h3>🎲 Création de Personnage</h3>
+                    <p>Étapes pour créer un PJ.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Onglet Carte -->
+        <section id="carte" class="tab-content">
+            <h2>Carte Interactive</h2>
+            <p>Explorez le monde de [Nom de ton JDR] :</p>
+            <div id="map" style="height: 500px; width: 100%; border-radius: 8px; margin-top: 20px;"></div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <!-- Leaflet JS (pour la carte) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Ton JS -->
+    <script src="script.js"></script>
+</body>
+</html>
