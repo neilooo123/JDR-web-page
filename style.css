@@ -71,6 +71,10 @@ header {
     display: block;
 }
 
+.tab-content h1 {
+    text-align: center;
+}
+
 .tab-content h1, .tab-content h2 {
     color: #2c3e50;
     margin-bottom: 20px;
