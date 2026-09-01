@@ -82,6 +82,11 @@ header {
     transform: translateY(-5px);
 }
 
+/* Centre uniquement les h3 dans .card donc les noms des personnage */
+.card h3 {
+    text-align: center; /* Centre uniquement les h3 dans .card */
+}
+
 /* Style pour les images NON-pixel (ex: portraits réalistes) */
 .card img:not(.pixel-character) {
     width: 100%;
