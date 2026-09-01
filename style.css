@@ -123,7 +123,10 @@ header {
     border-radius: 5px; /* Optionnel : garde le style des autres images */
 }
 
-/* ===== STYLE POUR L'ONGLET BUILD ===== */
+/* =============================================
+   STYLE POUR L'ONGLET BUILD (COMPÉTENCES)
+   ============================================= */
+
 #build {
     padding: 20px;
     background-color: white;
@@ -150,46 +153,57 @@ header {
     background-color: #ecf0f1;
     border-radius: 8px;
     padding: 15px;
-    cursor: pointer; /* Change le curseur au survol */
+    cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
+    /* 👇 IMPORTANT : Position relative pour le déroulage */
+    position: relative;
+    overflow: hidden; /* Cache le contenu qui dépasse */
 }
 
+/* Effet au survol */
 .skill:hover {
     background-color: #dfe6e9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Titre de la compétence */
+/* Titre de la compétence (cliquable) */
 .skill-name {
     color: #e74c3c;
     margin: 0 0 10px 0;
     font-size: 1.2rem;
     border-bottom: 1px solid #bdc3c7;
     padding-bottom: 5px;
-    cursor: pointer; /* Curseur "main" au survol */
+    cursor: pointer;
 }
 
-/* Détails de la compétence (cachés par défaut) */
+/* =============================================
+   RÈGLES CRUCIALES POUR LE DÉROULAGE
+   ============================================= */
 .skill-details {
-    display: none; /* 👈 Caché par défaut */
+    /* 👇 CACHE LES DÉTAILS PAR DÉFAUT */
+    display: none;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     margin-top: 10px;
     border-left: 4px solid #e74c3c;
-}
-
-/* Animation de déroulage */
-.skill-details {
+    /* Animation fluide */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
 
 .skill.active .skill-details {
+    /* 👇 AFFICHE LES DÉTAILS QUAND LA CLASSE 'active' EST AJOUTÉE */
     display: block;
     max-height: 500px; /* Hauteur max pour l'animation */
     padding: 10px;
+}
+
+/* Style pour les paragraphes dans les détails */
+.skill-details p {
+    margin: 5px 0;
+    color: #2c3e50;
 }
 
 
