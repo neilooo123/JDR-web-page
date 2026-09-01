@@ -15,13 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Gestion des compétences (déroulage)
-    const skillNames = document.querySelectorAll('.skill-name');
-    skillNames.forEach(skillName => {
-        skillName.addEventListener('click', (e) => {
+        // ===== Gestion des compétences (déroulage) =====
+    const skills = document.querySelectorAll('.skill'); // 👈 Cible toute la case
+    skills.forEach(skill => {
+        skill.addEventListener('click', (e) => {
             e.stopPropagation();
-            const skill = skillName.parentElement;
-            skill.classList.toggle('active');
+            skill.classList.toggle('active'); // 👈 Active/désactive les détails
         });
     });
 
