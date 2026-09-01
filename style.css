@@ -21,6 +21,19 @@ header {
     border-radius: 8px;
 }
 
+/* Style pour le logo */
+.logo-container {
+    text-align: center; /* Centre le logo horizontalement */
+    padding: 20px 0; /* Espace au-dessus et en dessous */
+    background-color: #2c3e50; /* Même couleur que ta barre de nav (optionnel) */
+}
+
+.logo {
+    max-width: 300px; /* Largeur max (ajuste selon ton logo) */
+    height: auto; /* Garde les proportions */
+    image-rendering: pixelated; /* Si ton logo est en pixel art */
+}
+
 .nav-tabs {
     display: flex;
     justify-content: center;
