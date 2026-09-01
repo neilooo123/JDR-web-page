@@ -18,6 +18,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+        // ===== Gestion du déroulage des compétences =====
+    document.addEventListener('DOMContentLoaded', () => {
+        // Gestion des onglets (ton code existant)
+        const tabLinks = document.querySelectorAll('.nav-tabs a');
+        const tabContents = document.querySelectorAll('.tab-content');
+    
+        tabLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                tabLinks.forEach(l => l.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                link.classList.add('active');
+                const tabId = link.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    
+        // NOUVEAU : Gestion du clic sur les compétences
+        const skillNames = document.querySelectorAll('.skill-name');
+        skillNames.forEach(skillName => {
+            skillName.addEventListener('click', (e) => {
+                e.stopPropagation(); // Empêche la propagation du clic au parent
+                const skill = skillName.parentElement;
+                skill.classList.toggle('active'); // Active/désactive la classe "active"
+            });
+        });
+    });
+    
+
     // ===== Carte Interactive =====
     const map = L.map('map').setView([48.8566, 2.3522], 5); // Coordonnées de Paris par défaut
 
