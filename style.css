@@ -29,7 +29,8 @@ header {
 }
 
 .logo {
-    max-width: 400px; /* Largeur max (ajuste selon ton logo) */
+    width: 128px; /* 32px * 4 */
+    height: 128px; /* 32px * 4 */
     height: auto; /* Garde les proportions */
     image-rendering: pixelated; /* Si ton logo est en pixel art */
 }
