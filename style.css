@@ -102,6 +102,20 @@ header {
     border-left: 4px solid #e74c3c;
 }
 
+/* Section dico */
+.word-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.word-section article {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #b22222;
+}
+
 /* Bannière */
 .banner {
     width: 100%;
