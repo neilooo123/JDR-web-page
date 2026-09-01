@@ -82,19 +82,24 @@ header {
     transform: translateY(-5px);
 }
 
-.card img {
+/* Style pour les images NON-pixel (ex: portraits réalistes) */
+.card img:not(.pixel-character) {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-/* lisser les image piskel */
+/* Style pour la sorcière pixel art */
 .pixel-character {
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     width: 128px; /* 32px * 4 */
     height: 128px; /* 32px * 4 */
+    display: block; /* 👈 Permet margin: auto */
+    margin: 0 auto 10px; /* 👈 Centre horizontalement + marge en bas */
+    border-radius: 5px; /* Optionnel : garde le style des autres images */
 }
+
 
 /* Section règles */
 .rules-section {
