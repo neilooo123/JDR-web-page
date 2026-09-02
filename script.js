@@ -48,12 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // ===== Données des villes =====
         const villes = [
             {
-                nom: "Elduria",
+                nom: "Cendrel",
                 dirigeant: "Les frères Docol",
-                religion: "Culte de la Lune Éternelle",
-                puissanceDefensive: "Très élevée (muraille de pierre noire)",
-                description: "Ville fortifiée entourée de montagnes, connue pour ses mines d'argent et son temple lunaire.",
-                coords: [800, 500] // 👈 [Y, X] sur ton image
+                religion: "Culte des cendres",
+                puissanceDefensive: "Très peu de puissance defencive",
+                description: "Petit hameau, cette ville est entouré d'une forêt profonde dans laquelle il peut-être facile de ci perdre. ",
+                coords: [324, 153] // 👈 [Y, X] sur ton image
             },
             {
                 nom: "Odacap",
