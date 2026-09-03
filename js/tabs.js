@@ -1,4 +1,9 @@
- // ===== 1. Gestion des onglets =====
+'use strict';  // <-- À ajouter ici
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+// ===== 1. Gestion des onglets =====
     const tabLinks = document.querySelectorAll('.nav-tabs a');
     const tabContents = document.querySelectorAll('.tab-content');
 
@@ -12,3 +17,4 @@
             document.getElementById(tabId).classList.add('active');
         });
     });
+})
