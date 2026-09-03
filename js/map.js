@@ -1,4 +1,6 @@
-   // ===== CARTE PERSONNALISÉE =====
+
+
+// ===== CARTE PERSONNALISÉE =====
 if (document.getElementById('map')) {
     const map = L.map('map', {
         crs: L.CRS.Simple,
