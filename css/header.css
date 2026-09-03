@@ -19,4 +19,26 @@ header {
     height: auto; /* Garde les proportions */
     image-rendering: pixelated; /* Si ton logo est en pixel art */
 }
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-tabs a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-tabs a:hover {
+    background-color: #34495e;
+}
+
+.nav-tabs a.active {
+    background-color: #e74c3c;
+}
 
