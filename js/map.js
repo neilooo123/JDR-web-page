@@ -1,3 +1,6 @@
+'use strict';  // <-- À ajouter ici
+
+document.addEventListener('DOMContentLoaded', () => {
 
 
 // ===== CARTE PERSONNALISÉE =====
@@ -65,4 +68,4 @@ if (document.getElementById('map')) {
         marker.bindPopup(/* ... */);
     });
 }
-
+});
