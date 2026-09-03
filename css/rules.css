@@ -1,1 +1,51 @@
+/* Section règles */
+.rules-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rules-section article {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+}
+
+/* Section dico */
+.word-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.word-section article {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #0080ff;
+}
+
+/* Style pour les popups de la carte */
+.leaflet-popup-content {
+    margin: 10px;
+    min-width: 200px;
+}
+
+.leaflet-popup-content h3 {
+    margin-top: 0;
+    color: #e74c3c;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 5px;
+}
+
+.leaflet-popup-content p {
+    margin: 5px 0;
+    color: #2c3e50;
+}
+
+/* Style pour la carte Leaflet */
+#map {
+    background-color: #f5f5f5;
+}
 
