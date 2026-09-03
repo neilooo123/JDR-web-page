@@ -138,3 +138,4 @@ loadSkills();
             skill.classList.toggle('active');
         });
     });
+})
